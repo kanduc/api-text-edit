@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000
 //app.use(express.json());
 
 // routes
-//app.use(require('./routes/index'));
+app.use(require('./routes/index'));
 //app.use('/api/fb', require('./routes/fb'));
 
 app.get('/hola', function (req, res) {
