@@ -14,7 +14,7 @@ router.post('/api/fb', (req, res) => {
     }*/
     let dataRespFb = parseSignedRequest(req)
     const dataResponse = {
-        url: 'https://edito-texto-front.herokuapp.com/deletion',
+        url: 'https://edito-diplo-text.herokuapp.com/deletion',
         confirmation_code: 'abc123'
     };
     res.json(dataResponse)
