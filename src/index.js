@@ -14,11 +14,11 @@ const PORT = process.env.PORT || 3000
 //app.use(require('./routes/index'));
 //app.use('/api/fb', require('./routes/fb'));
 
-app.get('/test/', function (req, res {
+app.get('/hola/', function (req, res) {
 	res.send("Hola")
-}));
+});
 
 // starting the server
 app.listen(PORT, () => {
-    console.log('Server on port ${app.get('port')}');
+    console.log('Server on port '+PORT);
 });
