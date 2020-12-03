@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 // settings
-app.set('port', process.env.PORT || 4000);
+const PORT = process.env.PORT || 3000
 
 // middlewares
 //app.use(morgan('dev'));
@@ -19,6 +19,6 @@ app.get('/test/', function (req, res {
 }));
 
 // starting the server
-app.listen(app.get('port'), () => {
+app.listen(PORT, () => {
     console.log('Server on port ${app.get('port')}');
 });
