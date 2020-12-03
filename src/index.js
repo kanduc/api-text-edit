@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 3000
 //app.use(require('./routes/index'));
 //app.use('/api/fb', require('./routes/fb'));
 
-app.get('/hola/', function (req, res) {
+app.get('/hola', function (req, res) {
 	res.send("Hola")
 });
 
