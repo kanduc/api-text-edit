@@ -1,3 +1,4 @@
+/*
 const { Router } = require('express');
 const router = new Router();
 const _ = require('underscore');
@@ -12,7 +13,7 @@ router.post('/', (req, res) => {
     } else {
         res.status(500).json({error: 'There was an error.'});
     }*/
-    let dataRespFb = parseSignedRequest(req)
+  /*  let dataRespFb = parseSignedRequest(req)
     const dataResponse = {
         url: 'https://edito-texto-front.herokuapp.com/deletion?id=abc123',
         confirmation_code: 'pruebaapi.com'
@@ -46,4 +47,4 @@ function parseSignedRequest(signedRequest, secret) {
     return data;
 }
 
-module.exports = router;
+module.exports = router;*/
