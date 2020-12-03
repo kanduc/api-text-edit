@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const router = new Router();
-//const _ = require('underscore');
+const _ = require('underscore');
 
 router.post('/api/fb', (req, res) => {
     /*const id = movies.length + 1;
@@ -12,14 +12,14 @@ router.post('/api/fb', (req, res) => {
     } else {
         res.status(500).json({error: 'There was an error.'});
     }*/
-    //let dataRespFb = parseSignedRequest(req)
+    let dataRespFb = parseSignedRequest(req)
     const dataResponse = {
-        url: 'https://edito-texto-front.herokuapp.com/deletion?id=abc123',
-        confirmation_code: 'pruebaapi.com'
+        url: 'https://edito-texto-front.herokuapp.com/deletion',
+        confirmation_code: 'abc123'
     };
     res.json(dataResponse)
 });
-/*
+
 var crypto = require('crypto');
 
 function base64decode(data) {
@@ -45,5 +45,5 @@ function parseSignedRequest(signedRequest, secret) {
     }
     return data;
 }
-*/
+
 module.exports = router;

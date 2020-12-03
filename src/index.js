@@ -14,8 +14,8 @@ app.use(express.json());
 app.use(require('./routes/index'));
 app.use(require('./routes/fb'));
 
-app.get('/hola', function (req, res) {
-	res.send("Hola")
+app.get('/deletion', function (req, res) {
+	res.sendFile('/index.html',{ root: __dirname})
 });
 
 // starting the server
